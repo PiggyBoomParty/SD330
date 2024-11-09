@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>E04 - Create a 'fridge display' using interactive JS!</title>
+    </head>
+
+    <style>
+        .fiveButtons { width:10%; margin-left: auto; margin-right: auto; display: block ; 
+                    }
+        .screen {width:50%; margin-left: auto; margin-right: auto; display: block}
+    </style>
+
+    <body onload="clockFunction();" onload="OnLoad();">
+
+
+        <input type="image" id="fridgebutton" onclick="off()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaR5uErx7On0DTLxtWLiQ2IIwh4ftv_n6nRdO4Iu1E7HRloIcvSZxyCrssCkgos_biXEY&usqp=CAU" class="screen" style="width:100px;height:100px;"/>
+        <input class="fiveButtons" type=button onclick="temperature()" id="button1" value="Temperature" >
+        <input class="fiveButtons" type=button onclick="shelf()" id="button2" value="Shelf View">
+        <input class="fiveButtons" type=button onclick="flix()" id="button3" value="Netflix">
+        <input class="fiveButtons" type=button onclick="browser()" id="button4" value="Browser">
+        <input class="fiveButtons" type=button onclick="settings()" id="button5" value="Settings">
+        <p id="timePar" style="font-size:1em;font-family: 'Courier New' , Courier, monospace;
+             text-align: center;">00:00:00</p>
+
+        <div id="div1">
+
+            <img src="https://i.pinimg.com/originals/64/eb/ef/64ebefbbd558d77f1a1e0d01a4e050c1.png" class="screen" style="width:980px;height:600px;" id="fridgeScreen">
+        </div>
+
+
+        <script> 
+
+
+ 
+
+            function shelf() {
+                var image = document.getElementById('fridgeScreen');
+
+                image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyhI1naiN4tw_WIKVDbZtfPnZdbd_RlFXrw&s";
+                return false;
+            }
+            
+            function flix() {
+                var image = document.getElementById('fridgeScreen');
+
+                image.src = "https://emby.media/community/uploads/monthly_03_2019/post-440811-0-54026200-1552949850.jpg";
+                return false;
+            }
+
+            function browser() {
+                var image = document.getElementById('fridgeScreen');
+
+                image.src = "https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/images/2020-08-10-09-29-17-1f98c3.png";
+                return false;
+            }
+
+            function settings() {
+                var image = document.getElementById('fridgeScreen');
+
+                image.src = "https://filestore.community.support.microsoft.com/api/images/5dbfa3c0-d80a-4965-adf8-6c32a9d3586a?upload=true&fud_access=wJJIheezUklbAN2ppeDns8cDNpYs3nCYjgitr%2BfFBh2dqlqMuW7np3F6Utp%2FKMltnRRYFtVjOMO5tpbpW9UyRAwvLeec5emAPixgq9ta07Dgnp2aq5eJbnfd%2FU3qhn54O1Hng8yxhX7v5tKe9fk%2F7AtzCToOLcCWvTVtYRL%2FLxgcY6bm8JKv%2F8XtqFfAB74X5N1oZm70cuvgyOS2w%2Fr%2BxkViDUdU6ghrzGjwdvOTR3nZzmVr46VjMQXOmSsfbBoxduw31%2BYk%2BVej1hidmdj%2BXR%2FMwXneTz1Rc55bAARahgfneqG9l8B1CTpDAeV80H%2FTr%2Bjduc4hDkbe%2BFChWYn1o2XeEM%2BvcqfLnyaQXmF19VW9JO8KzF91ETb5w6Gz%2F6TLXgKR2T2wRjcbRapzSN35Adn%2BqGCyqusuD9qdqXb%2BZe8%3D";
+                return false;
+            }
+
+            function temperature() {
+                alert("32 Degrees");
+            }
+
+            
+            function off() {
+                var image = document.getElementById('fridgeScreen');
+
+                image.src = "https://i.pinimg.com/originals/64/eb/ef/64ebefbbd558d77f1a1e0d01a4e050c1.png";
+                return false;
+            }
+
+
+
+
+            function clockFunction()
+            {
+                setInterval(clockTick,1000);
+            }
+
+        function clockTick()
+        {
+            var currentDate = new Date();
+            var hours = currentDate.getHours();
+            var mins = currentDate.getMinutes();
+            var seconds = currentDate.getSeconds();
+            var timeTotal = hours+":"+mins+":"+seconds;
+
+            var outputElement = document.getElementById("timePar");
+            outputElement.textContent=timeTotal;
+
+        }
+        </script>
+
+        <footer>
+        Diego Monge, 10-16-2024
+        </footer>
+    </body>
+</html>
