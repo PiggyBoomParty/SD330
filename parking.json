@@ -1,0 +1,139 @@
+{
+    "parkingLots": [
+      {
+        "name": "McCann Lot",
+        "mapFileName": "McCann.jpg",
+        "totalParkingSpaces": 80,
+        "comment": "Also known as Sheahan",
+        "spaces": [
+          {
+            "spaceNumber": 1,
+            "type": "student",
+            "isHandicap": false,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 2,
+            "type": "faculty",
+            "isHandicap": false,
+            "status": "filled",
+            "timeFilled": "2024-11-25T08:30:00Z",
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 3,
+            "type": "handicap",
+            "isHandicap": true,
+            "status": "reserved",
+            "timeFilled": null,
+            "timeReserved": "2024-11-25T07:00:00Z"
+          },
+          {
+            "spaceNumber": 4,
+            "type": "student",
+            "isHandicap": false,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 5,
+            "type": "student",
+            "isHandicap": false,
+            "status": "filled",
+            "timeFilled": "2024-11-25T09:15:00Z",
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 6,
+            "type": "faculty",
+            "isHandicap": false,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 7,
+            "type": "student",
+            "isHandicap": false,
+            "status": "reserved",
+            "timeFilled": null,
+            "timeReserved": "2024-11-25T06:45:00Z"
+          },
+          {
+            "spaceNumber": 8,
+            "type": "faculty",
+            "isHandicap": false,
+            "status": "filled",
+            "timeFilled": "2024-11-25T10:00:00Z",
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 9,
+            "type": "handicap",
+            "isHandicap": true,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 10,
+            "type": "student",
+            "isHandicap": false,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 11,
+            "type": "faculty",
+            "isHandicap": false,
+            "status": "filled",
+            "timeFilled": "2024-11-25T08:45:00Z",
+            "timeReserved": null
+          },
+          {
+            "spaceNumber": 12,
+            "type": "student",
+            "isHandicap": false,
+            "status": "available",
+            "timeFilled": null,
+            "timeReserved": null
+          }
+        ]
+      },
+      {
+        "name": "Foy Lot",
+        "mapFileName": "Foylot.jpg",
+        "totalParkingSpaces": 30,
+        "comment": ""
+      },
+      {
+        "name": "Dyson Lot",
+        "mapFileName": "Dysonlot.jpg",
+        "totalParkingSpaces": 40,
+        "commentSection": ""
+      },
+      {
+        "name": "Donnelly Lot",
+        "mapFileName": "Donnellylot.jpg",
+        "totalParkingSpaces": 50,
+        "commentSection": ""
+      },
+      {
+        "name": "Fountaine Lot",
+        "mapFileName": "FountaineLot.jpg",
+        "totalParkingSpaces": 20,
+        "commentSection": ""
+      },
+      {
+        "name": "Hoop Lot",
+        "mapFileName": "Hooplot.jpg",
+        "totalParkingSpaces": 50,
+        "commentSection": "The one near the large field"
+      }
+    ]
+  }
+  
