@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marist Parking Lot Details</title>
+</head>
+<body>
+    <h1>Parking Spaces for the Selected Lot</h1>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const lot = urlParams.get('lot');
+
+        const lots = {
+            "McCann Lot": [
+                { spaceNumber: 1, type: "student", isHandicap: false, status: "available" },
+                { spaceNumber: 2, type: "faculty", isHandicap: false, status: "filled" },
+                { spaceNumber: 3, type: "handicap", isHandicap: true, status: "reserved" }
+            ],
+            "Foy Lot": []
+        };
+
+        const spaces = lots[lot];
+
+        if (spaces) {
+            document.write(`<h2>${lot}</h2>`);
+            document.write('<ul>');
+            spaces.forEach(space => {
+                document.write(`<li>Space ${space.spaceNumber}: ${space.type}, Handicap: ${space.isHandicap}, Status: ${space.status}</li>`);
+            });
+            document.write('</ul>');
+        } else {
+            document.write('<p>No data available for this lot.</p>');
+        }
+    </script>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
